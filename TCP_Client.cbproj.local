@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.114,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.892,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.656,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.543,C:\Users\7wave\Documents\c++\sample\rad studio\c++ builder\RAD 클라이언트\Project1PCH1.h=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.561,C:\Users\7wave\Documents\PG\c++\sample\rad studio\융합프로젝트\통신\RAD Clinet\TCP_ClientPCH1.h=C:\Users\7wave\Documents\PG\c++\sample\rad studio\융합프로젝트\통신\RAD Clinet\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.484,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.172,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.651,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.385,C:\Users\7wave\Documents\c++\sample\rad studio\c++ builder\RAD 클라이언트\Unit1.h=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.832,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.801,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.179,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.639,C:\Users\7wave\Documents\c++\sample\rad studio\c++ builder\RAD 클라이언트\Project1.cbproj=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.452,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.570,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.455,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.566,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.919,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.531,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.385,C:\Users\7wave\Documents\c++\sample\rad studio\c++ builder\RAD 클라이언트\Unit1.cpp=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.629,C:\Users\7wave\Documents\PG\c++\sample\rad studio\융합프로젝트\통신\RAD Clinet\TCP_Client.cbproj=C:\Users\7wave\Documents\PG\c++\sample\rad studio\융합프로젝트\통신\RAD Clinet\Project1.cbproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.385,C:\Users\7wave\Documents\c++\sample\rad studio\c++ builder\RAD 클라이언트\Unit1.fmx=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.963,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.963,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.348,=C:\Users\7wave\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="4c2154a3"/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

@@ -1,0 +1,354 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 412
+  ClientWidth = 315
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 24
+  end
+  object Button1: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'nexttoolbutton'
+    TabOrder = 2
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 8.000000000000000000
+    Position.Y = 307.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    OnKeyDown = Edit1KeyDown
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 281.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 293.000000000000000000
+    Viewport.Height = 277.000000000000000000
+  end
+  object RectAnimation1: TRectAnimation
+    Duration = 0.200000002980232200
+  end
+  object Button3: TButton
+    Position.Y = 384.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'ip,port'
+    OnClick = Button3Click
+  end
+  object Button2: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 384.000000000000000000
+    TabOrder = 12
+    Text = 'db Add'
+    OnClick = Button2Click
+  end
+  object Panel1: TPanel
+    Position.X = 32.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 385.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 13
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 88.000000000000000000
+      Position.Y = 16.000000000000000000
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 88.000000000000000000
+      Position.Y = 56.000000000000000000
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Position.X = 88.000000000000000000
+      Position.Y = 96.000000000000000000
+    end
+    object Edit5: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      Position.X = 88.000000000000000000
+      Position.Y = 136.000000000000000000
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = #51339#51008#51020#49885
+      TabOrder = 31
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = #45208#49244#51020#49885
+      TabOrder = 30
+    end
+    object Label3: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 96.000000000000000000
+      Text = #47932#51656
+      TabOrder = 29
+    end
+    object Label4: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 136.000000000000000000
+      Text = #51613#49345
+      TabOrder = 28
+    end
+    object Label5: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 176.000000000000000000
+      Text = #50696#48169#48277
+      TabOrder = 27
+    end
+    object Label6: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 216.000000000000000000
+      Text = #49885#51060#50836#48277
+      TabOrder = 26
+    end
+    object Label7: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 256.000000000000000000
+      Text = #50868#46041
+      TabOrder = 25
+    end
+    object Label8: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 296.000000000000000000
+      Text = #51648#49549#44592#44036
+      TabOrder = 24
+    end
+    object Label9: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 336.000000000000000000
+      Text = #50672#47161
+      TabOrder = 23
+    end
+    object Button4: TButton
+      Position.X = 192.000000000000000000
+      Position.Y = 336.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 32
+      Text = #51200#51109
+      OnClick = Button4Click
+    end
+    object Edit7: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.X = 88.000000000000000000
+      Position.Y = 216.000000000000000000
+    end
+    object Edit6: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Position.X = 88.000000000000000000
+      Position.Y = 176.000000000000000000
+    end
+    object Edit8: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 88.000000000000000000
+      Position.Y = 264.000000000000000000
+    end
+    object Edit9: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 88.000000000000000000
+      Position.Y = 304.000000000000000000
+    end
+    object Edit10: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 88.000000000000000000
+      Position.Y = 344.000000000000000000
+    end
+    object Button7: TButton
+      Position.X = 240.000000000000000000
+      Size.Width = 25.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 34
+      Text = 'X'
+      OnClick = Button7Click
+    end
+  end
+  object Panel2: TPanel
+    Position.X = 48.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 249.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 34
+    object Label10: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ip:'
+      TabOrder = 1
+    end
+    object IP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 40.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object PORT: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 40.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label11: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'port:'
+      TabOrder = 0
+    end
+    object Button5: TButton
+      Position.X = 184.000000000000000000
+      Size.Width = 25.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'X'
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Position.X = 72.000000000000000000
+      Position.Y = 184.000000000000000000
+      TabOrder = 5
+      Text = 'Connect'
+      OnClick = Button6Click
+    end
+  end
+  object Panel3: TPanel
+    Position.X = 80.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 241.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 33
+    object Edit11: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 32.000000000000000000
+      Position.Y = 88.000000000000000000
+    end
+    object Label12: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = #52628#44032#54624' '#48337#47749#51012' '#51077#47141#54644#51452#49464#50836
+      TabOrder = 0
+    end
+    object Button8: TButton
+      Position.X = 40.000000000000000000
+      Position.Y = 160.000000000000000000
+      TabOrder = 2
+      Text = #54869#51064
+      OnClick = Button8Click
+    end
+    object Button9: TButton
+      Position.X = 152.000000000000000000
+      Size.Width = 25.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'X'
+      OnClick = Button9Click
+    end
+  end
+  object Panel4: TPanel
+    Position.X = 64.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 337.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 37
+    object Label13: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'AccesPassWord'
+      TabOrder = 0
+    end
+    object Edit12: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 16.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button10: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 56.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Enter'
+      TextSettings.Font.Size = 18.000000000000000000
+      OnClick = Button10Click
+    end
+  end
+  object IdTCPClient1: TIdTCPClient
+    ConnectTimeout = 0
+    Host = '192.168.0.25'
+    IPVersion = Id_IPv4
+    Port = 8000
+    ReadTimeout = -1
+    Left = 80
+  end
+end

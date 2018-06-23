@@ -1,0 +1,70 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+#pragma resource ("*.NmXhdpiPh.fmx", _PLAT_ANDROID)
+#pragma resource ("*.iPhone4in.fmx", _PLAT_IOS)
+
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	String SendMessage;
+	SendMessage=Edit4->Text+": "+Edit1->Text;
+	if(IdTCPClient1->Connected())
+	{
+		IdTCPClient1->Socket->Write(SendMessage, IndyTextEncoding(949));
+        Edit1->Text="";
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Timer1Timer(TObject *Sender)
+{
+	int bufsize;
+	UnicodeString receive;
+	if(IdTCPClient1->Connected())
+	{
+		if(!IdTCPClient1->IOHandler->InputBufferIsEmpty())
+		{
+			bufsize=IdTCPClient1->IOHandler->InputBuffer->Size;
+			receive=IdTCPClient1->IOHandler->ReadString(bufsize, IndyTextEncoding(949));
+			Memo1->Lines->Add(receive);
+            Memo1->GoToTextEnd();
+		}
+	}
+}
+
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+
+	if(!(Edit2->Text==""||Edit3->Text==""))
+	{
+		IdTCPClient1->Host= Edit2->Text;
+		IdTCPClient1->Port=StrToInt(Edit3->Text);
+		IdTCPClient1->Connect();
+	}
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Edit1KeyDown(TObject *Sender, WORD &Key, System::WideChar &KeyChar,
+          TShiftState Shift)
+{
+	if(Key==13)
+	{
+		Button1Click(Action);
+	}
+}
+//---------------------------------------------------------------------------
+

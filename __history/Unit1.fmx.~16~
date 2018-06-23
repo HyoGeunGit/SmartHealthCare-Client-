@@ -1,0 +1,254 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 412
+  ClientWidth = 315
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 40
+    Top = 16
+  end
+  object Button1: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'nexttoolbutton'
+    TabOrder = 6
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 8.000000000000000000
+    Position.Y = 235.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    OnKeyDown = Edit1KeyDown
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 8.000000000000000000
+    Position.Y = 3.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 293.000000000000000000
+    Viewport.Height = 213.000000000000000000
+  end
+  object RectAnimation1: TRectAnimation
+    Duration = 0.200000002980232200
+  end
+  object Button3: TButton
+    Position.Y = 392.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'ip,port'
+    OnClick = Button3Click
+  end
+  object Panel1: TPanel
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 233.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 16
+    object Button2: TButton
+      StyledSettings = [Family, Size, Style]
+      Position.X = 203.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 86.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'playtoolbutton'
+      TabOrder = 0
+      Text = 'Button2'
+      TextSettings.FontColor = claAquamarine
+      OnClick = Button2Click
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = '192.168.0.29'
+      Position.X = 80.000000000000000000
+      Position.Y = 73.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = '8000'
+      Position.X = 79.000000000000000000
+      Position.Y = 129.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 74.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      Text = 'IP Adresse'
+      TabOrder = 3
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 24.000000000000000000
+      Position.Y = 130.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      Text = 'Port'
+      TabOrder = 4
+    end
+    object Button4: TButton
+      Position.X = 265.000000000000000000
+      Size.Width = 24.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'X'
+      OnClick = Button4Click
+    end
+  end
+  object RadioButton1: TRadioButton
+    IsChecked = True
+    Position.X = 24.000000000000000000
+    Position.Y = 272.000000000000000000
+    TabOrder = 21
+    Text = #51204#52404
+  end
+  object RadioButton2: TRadioButton
+    Position.X = 24.000000000000000000
+    Position.Y = 296.000000000000000000
+    TabOrder = 20
+    Text = #51613#49345
+  end
+  object RadioButton3: TRadioButton
+    Position.X = 24.000000000000000000
+    Position.Y = 320.000000000000000000
+    TabOrder = 18
+    Text = #51339#51008#51020#49885
+  end
+  object Panel2: TPanel
+    Position.X = 16.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 233.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 14
+    object Button5: TButton
+      StyledSettings = [Family, Size, Style]
+      Position.X = 203.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 86.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'playtoolbutton'
+      TabOrder = 0
+      Text = 'Button2'
+      TextSettings.FontColor = claAquamarine
+      OnClick = Button2Click
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = '192.168.0.29'
+      Position.X = 80.000000000000000000
+      Position.Y = 73.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Edit5: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = '8000'
+      Position.X = 79.000000000000000000
+      Position.Y = 129.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label3: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 74.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      Text = 'IP Adresse'
+      TabOrder = 3
+    end
+    object Label4: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 24.000000000000000000
+      Position.Y = 130.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      Text = 'Port'
+      TabOrder = 4
+    end
+    object Button6: TButton
+      Position.X = 265.000000000000000000
+      Size.Width = 24.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'X'
+      OnClick = Button4Click
+    end
+  end
+  object RadioButton4: TRadioButton
+    Position.X = 168.000000000000000000
+    Position.Y = 272.000000000000000000
+    TabOrder = 19
+    Text = #45208#49244#51020#49885
+  end
+  object RadioButton5: TRadioButton
+    Position.X = 168.000000000000000000
+    Position.Y = 296.000000000000000000
+    TabOrder = 17
+    Text = 'RadioButton1'
+  end
+  object RadioButton6: TRadioButton
+    Position.X = 168.000000000000000000
+    Position.Y = 320.000000000000000000
+    TabOrder = 15
+    Text = 'RadioButton1'
+  end
+  object IdTCPClient1: TIdTCPClient
+    ConnectTimeout = 0
+    Host = '192.168.0.227'
+    IPVersion = Id_IPv4
+    Port = 3500
+    ReadTimeout = -1
+    Left = 104
+    Top = 16
+  end
+end

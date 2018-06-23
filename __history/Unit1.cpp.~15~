@@ -1,0 +1,95 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+#pragma resource ("*.NmXhdpiPh.fmx", _PLAT_ANDROID)
+#pragma resource ("*.iPhone4in.fmx", _PLAT_IOS)
+
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+ //	String SendMessage;           //보낼 텍스트 저장 함수 지정
+   //	SendMessage=Edit1->Text;  //닉네임과 함께 텍스트 전송
+	if(IdTCPClient1->Connected())     //전송 가능인지 확인
+	{
+			 if(RadioButton1->IsChecked){
+				IdTCPClient1->Socket->Write(Edit1->Text, IndyTextEncoding(949));
+				Edit1->Text="";
+			 }
+			 if(RadioButton2->IsChecked){
+				IdTCPClient1->Socket->Write(Edit1->Text, IndyTextEncoding(949));
+				Edit1->Text="";
+			 }
+
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Timer1Timer(TObject *Sender)
+{
+	int bufsize;
+	UnicodeString receive;
+	if(IdTCPClient1->Connected())
+	{
+		if(!IdTCPClient1->IOHandler->InputBufferIsEmpty())   //!=다음조건이 아니다
+		{
+			bufsize=IdTCPClient1->IOHandler->InputBuffer->Size;      //텍스트 크기 측정
+			receive=IdTCPClient1->IOHandler->ReadString(bufsize, IndyTextEncoding(949));
+			//receive함수에 받은 텍스트를 bufsize 크기 만큼 저장한다.
+			Memo1->Lines->Add(receive);    //recive==온 텍스트
+			Memo1->GoToTextEnd();
+			Memo1->Lines->Add("------------------------------------------------------------------------------------------------");
+		}
+	}
+}
+
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+
+	if(!(Edit2->Text==""||Edit3->Text==""))  //Edit2,3가 비어있지 않을 때
+	{
+		IdTCPClient1->Host= Edit2->Text;       //host(IP주소) 설정
+		IdTCPClient1->Port=StrToInt(Edit3->Text); //port 설정
+		IdTCPClient1->Connect();    //연결 시도
+	}
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Edit1KeyDown(TObject *Sender, WORD &Key, System::WideChar &KeyChar,
+		  TShiftState Shift)
+{
+	if(Key==13)
+	{
+		Button1Click(Action);
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{
+	Panel1->Visible=true;
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Button4Click(TObject *Sender)
+{
+	Panel1->Visible=false;
+}
+//---------------------------------------------------------------------------
+
+
+
+
